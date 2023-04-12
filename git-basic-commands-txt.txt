@@ -1,0 +1,47 @@
+BASİC GİT COMMANDS -LOCAL
+	Working directory
+		create project folder
+			mkdir folder1 
+		go to new file on terminal
+			cd folder1
+		create document-in-file for project
+			touch folder1.txt
+		for the file to be .git
+			git init
+		We now have a file on the working directory.
+	Staging Area
+		to see a snapshot of the file to be stored
+			git status 
+				the file will be listed in red because it is not ready
+		to make a new edit in the file with vim editor
+			vim folder1.txt
+				Writing starts with the 'i' command and ends the recording with the esc command followed by the :wq command.
+		command to import the file into the staging area
+			git add folder1 or file1.txt
+		We now have a file on the Staging Area
+	Git Repostory LOCAL
+		to record the version of the file and commit
+			git commit -m "Hello Git"
+		Viewing committed documents
+			git log
+		congratulations local git repository is ready
+	important commands
+		Switching files
+			git checkout
+		change in file contents
+			git commit --amend
+				then you may need to git add again
+		Gets the file pre-commit state
+			git rm --cached
+		completely deletes the file
+			rm -rf
+		differences in file versions
+			git diff master HEAD
+	GİTHUB TO GİT
+		       clone/fetch/push/pull
+			
+				git pull -u origin master
+			
+				git clone "github project link"
+	GİT TO GİTHUB
+		git push -u origin master
